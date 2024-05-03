@@ -367,7 +367,7 @@ aside {
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-.buttonAbout:hover, .buttonAbout:focus {
+.buttonAbout:hover {
     color: var(--font-main);
     outline: 0;
     box-shadow: 0 0 40px 40px var(--font-green) inset;
