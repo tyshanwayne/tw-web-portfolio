@@ -82,6 +82,7 @@ body, html{
     outline: none;
     position: relative;
     margin-left: 5px;
+    display: flex;
 }
 
 .close {
