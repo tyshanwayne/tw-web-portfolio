@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-background: #1e1f22;
+    --nav-bar: #2b2d30;
+    --font-white: #FFF;
+    --font-main: #bcbec4;
+    --font-orange: #be7949;
+    --font-blue: #4b83ec;
+    --font-green: #5aa173;
+    --border: #000;
+    --hover: #3e3f42;
+}
+* {
+    margin: 0;
+}
+body, html{
+    background-color: var(--main-background);
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+    * {
+        font-size: small;
+    }
+
+    aside {
+        max-width: 290px;
+        padding-left: 5px;
+    }
+
+    .introductionContainer {
+        max-width: 300px !important;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+.orange {
+    color: var(--font-orange);
+}
+
+.blue {
+    color: var(--font-blue);
+}
+
+.green {
+    color: var(--font-green);
+}
+
+.divflex {
+    display: flex;
+}
+
+/*TOPBAR*/
+.topbar {
+    background-color: var(--nav-bar);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid var(--border);
+    padding: 5px;
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
+    cursor: default;
+    font-family: "Roboto", sans-serif;
+    color: var(--font-white);
+}
+
+.buttonmac {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: relative;
+    margin-left: 5px;
+}
+
+.close {
+    background-color: #ff5f56;
+}
+
+.minimize {
+    background-color: #ffbd2e;
+}
+
+.maximize {
+    background-color: #27c93f;
+}
+
+.titlePortfolio {
+    margin-left: 20px;
+    display: flex;
+    padding: 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.tw_icon {
+    margin-right: 10px;
+}
+
+.margin5pxleft {
+    margin-left: 5px;
+}
+
+.versionControl {
+    display: flex;
+    padding: 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.rightTopbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.buttonIcon {
+    font-size: 27px;
+    color: var(--font-main);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.debug {
+    margin-right: 70px;
+    align-items: center;
+    display: flex;
+}
+
+.aboutMeApp {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.python {
+    margin-right: 5px;
+}
+
+.bx-dots-vertical-rounded {
+    color: var(--font-main);
+}
+
+.buttonIcon2 {
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.buttonIcon:hover, .buttonIcon2:hover, .aboutMeApp:hover,
+.titlePortfolio:hover, .versionControl:hover, li:hover,
+.portfoliobutton:hover, .projectSide:hover, .bottombar p:hover {
+    background-color: var(--hover);
+}
+
+.MainView {
+    background-color: var(--main-background);
+    color: var(--font-white);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+/*SIDEBAR*/
+aside {
+    background-color: var(--nav-bar);
+    border-right: 1px solid var(--border);
+    width: 330px;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 51px;
+}
+
+.iconSide {
+    border-right: 1px solid var(--border);
+    padding: 5px;
+    max-width: 37px;
+    display: flex;
+    flex-direction: column;
+}
+
+.amrge {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.iconSideBottom {
+    margin-top: auto;
+    margin-bottom: 80px;
+}
+
+.higa {
+    width: 100%;
+    background-color: var(--main-background);
+    height: 1px;
+}
+
+.textSide {
+    cursor: default;
+    width: 100%;
+}
+
+.projectSide {
+    padding: 10px;
+    cursor: default;
+    display: flex;
+}
+
+.portfoliobutton {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.miniTextSide {
+    box-sizing: border-box;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.miniTextSide li {
+    list-style-type: none;
+    display: flex;
+    padding-left: 40px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.miniTextSide .bx, .tabi {
+    margin-right: 3px;
+}
+
+.template li {
+    padding-left: 80px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+
+.template img {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.miniTextSide img {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+/*SIDEBAR RIGHT*/
+.rightSidebar {
+    background-color: var(--nav-bar);
+    border-left: 1px solid var(--border);
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    top: 51px;
+    right: 0;
+    padding: 5px;
+}
+
+
+/*FOOTER BOT BAR*/
+.bottombar {
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: var(--nav-bar);
+    position: fixed;
+    border-top: 1px solid var(--border);
+    color: var(--font-main);
+    font-family: 'Jetbrains Mono', monospace;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.bottomna {
+    margin-left: 12px;
+}
+
+.bottombar img {
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+}
+
+.bottombar p {
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.bottomleft {
+    display: flex;
+    align-items: center;
+}
+
+.bottomright {
+    margin-right: 15px;
+    display: flex;
+}
+
+/*MAIN CONTENT*/
+.content {
+    margin-top: 70px;
+    margin-left: 350px;
+    color: var(--font-main);
+    font-family: 'Jetbrains Mono', monospace;
+    display: block;
+    font-size: 18px;
+}
+
+.titleName {
+    font-size: 40px;
+}
+
+.introductionContainer {
+    max-width: 500px;
+    display: block;
+}
+
+.buttonAboutContainer {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttonAbout {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid var(--font-green);
+    border-radius: 4px;
+    color: var(--font-green);
+    cursor: pointer;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 18px;
+    line-height: 1;
+    margin: 6px;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Jetbrains Mono', monospace;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.buttonAbout:hover, .buttonAbout:focus {
+    color: var(--font-main);
+    outline: 0;
+    box-shadow: 0 0 40px 40px var(--font-green) inset;
+}
+
+.buttonAbout a {
+    text-decoration: none;
+    color: var(--font-white);
+    align-items: center;
+}
+
+.labelButton {
+    margin-right: 3px;
+}
