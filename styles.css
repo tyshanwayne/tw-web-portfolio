@@ -37,7 +37,9 @@ body, html{
 
     .content {
         width: 100%;
+        margin-left: 320px !important;
     }
+
 }
 
 .orange {
@@ -322,11 +324,14 @@ aside {
 /*MAIN CONTENT*/
 .content {
     margin-top: 70px;
-    margin-left: 350px;
+    margin-left: 370px;
     color: var(--font-main);
     font-family: 'Jetbrains Mono', monospace;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     font-size: 18px;
+    margin-right: 40px;
 }
 
 .titleName {
@@ -335,7 +340,6 @@ aside {
 
 .introductionContainer {
     max-width: 500px;
-    display: block;
 }
 
 .buttonAboutContainer {
@@ -367,7 +371,7 @@ aside {
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-.buttonAbout:hover, .buttonAbout:focus {
+.buttonAbout:hover {
     color: var(--font-main);
     outline: 0;
     box-shadow: 0 0 40px 40px var(--font-green) inset;
