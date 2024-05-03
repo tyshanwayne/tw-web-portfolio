@@ -292,7 +292,6 @@ aside {
     padding: 5px;
     align-items: center;
     display: flex;
-    justify-content: space-between;
     cursor: default;
 }
 
@@ -317,7 +316,8 @@ aside {
 }
 
 .bottomright {
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-left: auto;
     display: flex;
 }
 
