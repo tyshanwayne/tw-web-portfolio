@@ -74,6 +74,10 @@ body, html{
     color: var(--font-white);
 }
 
+.macos-button {
+    display: flex;
+}
+
 .buttonmac {
     width: 12px;
     height: 12px;
@@ -82,7 +86,6 @@ body, html{
     outline: none;
     position: relative;
     margin-left: 5px;
-    display: flex;
 }
 
 .close {
