@@ -49,5 +49,8 @@ function updateText() {
 
 window.addEventListener('scroll', highlightOnScroll);
 window.addEventListener('scroll', updateText);
-updateText();
-highlightOnScroll();
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateText();
+    highlightOnScroll();
+});
