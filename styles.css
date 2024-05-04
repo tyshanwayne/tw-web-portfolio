@@ -16,6 +16,7 @@
 * {
     margin: 0;
 }
+
 body, html{
     background-color: var(--main-background);
     height: 100%;
@@ -23,21 +24,18 @@ body, html{
 
 @media screen and (max-width: 600px) {
 
-    * {
-        font-size: small;
-    }
 
     aside {
         max-width: 250px;
     }
 
     .introductionContainer {
-        max-width: 300px !important;
+        max-width: 280px !important;
     }
 
     .content {
         width: 100%;
-        margin-left: 320px !important;
+        margin-left: 290px !important;
     }
 
     .madeProject {
@@ -96,15 +94,30 @@ body, html{
 }
 
 .close {
-    background-color: #ff5f56;
+    background-color: #FF605C;
+}
+
+.macos-button:hover .close {
+    background: url("icons/close.png");
+    background-size: 100%, 100%;
 }
 
 .minimize {
-    background-color: #ffbd2e;
+    background-color: #FFBD44;
+}
+
+.macos-button:hover .minimize {
+    background: url("icons/minimize.png");
+    background-size: 100%, 100%;
 }
 
 .maximize {
-    background-color: #27c93f;
+    background-color: #00CA4E;
+}
+
+.macos-button:hover .maximize {
+    background: url("icons/full-screen.png");
+    background-size: 100%, 100%;
 }
 
 .titlePortfolio {
@@ -175,7 +188,7 @@ body, html{
 .buttonIcon:hover, .buttonIcon2:hover, .aboutMeApp:hover,
 .titlePortfolio:hover, .versionControl:hover, .miniTextSide li:hover,
 .portfoliobutton:hover, .projectSide:hover, .bottombar p:hover,
-.apppy:hover, .highlight {
+.apppy:hover, .highlight, .maintech div:hover {
     background-color: var(--hover);
 }
 
@@ -190,12 +203,11 @@ body, html{
 aside {
     background-color: var(--nav-bar);
     border-right: 1px solid var(--border);
-    width: 290px;
+    width: 270px;
     height: 100%;
     display: flex;
     position: fixed;
     top: 51px;
-    transition: 0.3s;
 }
 
 .iconSide {
@@ -349,7 +361,7 @@ aside {
 /*MAIN CONTENT*/
 .content {
     margin-top: 80px;
-    margin-left: 330px;
+    margin-left: 310px;
     color: var(--font-main);
     font-family: 'Jetbrains Mono', monospace;
     display: flex;
@@ -362,6 +374,10 @@ aside {
 
 .titleName {
     font-size: 40px;
+    overflow: hidden; 
+    border-right: 3px solid var(--font-white);
+    white-space: nowrap;
+    animation: typing 4s steps(14) forwards, blink-caret 1s step-end infinite;
 }
 
 .introductionContainer {
@@ -462,3 +478,14 @@ aside {
     border-radius: 7px;
     margin: 10px;
 }
+/*KEYFRAMES*/
+@keyframes typing {
+    from { width: 0; }
+    to { width: 14ch; }
+  }
+  
+  /* Cursor Animation */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--font-white); }
+  }
