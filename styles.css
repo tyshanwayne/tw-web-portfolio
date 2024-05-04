@@ -377,7 +377,7 @@ aside {
     overflow: hidden; 
     border-right: 3px solid var(--font-white);
     white-space: nowrap;
-    animation: typing 4s steps(14) forwards, blink-caret 1s step-end infinite;
+    animation: typing 4s steps(14) forwards, blink 1s step-end infinite;
 }
 
 .introductionContainer {
@@ -485,7 +485,7 @@ aside {
   }
   
   /* Cursor Animation */
-  @keyframes blink-caret {
+  @keyframes blink {
     from, to { border-color: transparent; }
     50% { border-color: var(--font-white); }
   }
