@@ -10,6 +10,8 @@
     --font-blue: #4b83ec;
     --font-green: #5aa173;
     --font-yellow: #9f9e54;
+    --font-violet: #8c3f7e;
+    --font-purple: #8c81c8;
     --border: #000;
     --hover: #3e3f42;
 }
@@ -38,26 +40,24 @@ body, html{
         margin-left: 290px !important;
     }
 
-    .madeProject {
+    .madeProjectImage {
+        width: 240px !important;
+    }
+
+    .widthMobileImportant { 
         width: 300px !important;
+    }
+
+    .overlayImg {
+        padding: 10px !important;
     }
 }
 
-.orange {
-    color: var(--font-orange);
-}
-
-.blue {
-    color: var(--font-blue);
-}
-
-.green {
-    color: var(--font-green);
-}
-
-.yellow {
-    color: var(--font-yellow);
-}
+.orange {color: var(--font-orange);}
+.blue {color: var(--font-blue);}
+.green {color: var(--font-green);}
+.yellow {color: var(--font-yellow);}
+.violet {color: var(--font-violet)}
 
 .divflex {
     display: flex;
@@ -188,7 +188,7 @@ body, html{
 .buttonIcon:hover, .buttonIcon2:hover, .aboutMeApp:hover,
 .titlePortfolio:hover, .versionControl:hover, .miniTextSide li:hover,
 .portfoliobutton:hover, .projectSide:hover, .bottombar p:hover,
-.apppy:hover, .highlight, .maintech div:hover {
+.apppy:hover, .highlight {
     background-color: var(--hover);
 }
 
@@ -378,6 +378,18 @@ aside {
     border-right: 3px solid var(--font-white);
     white-space: nowrap;
     animation: typing 4s steps(14) forwards, blink 1s step-end infinite;
+    margin-top: 2px;
+}
+
+.titleName span {
+    display: inline-block;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.titleName span:hover {
+    color: var(--font-main);
+    transform: translateY(-6px);
 }
 
 .introductionContainer {
@@ -450,7 +462,14 @@ aside {
     cursor: pointer;
     margin-top: 10px;
     margin-right: 10px;
+    transition: all 0.1s ease;
 }
+
+.technologiesBox:hover {
+    transform: translateY(-6px);
+    background-color: var(--hover);
+}
+
 
 .technologiesBox img {
     height: 25px;
@@ -472,20 +491,76 @@ aside {
 }
 
 .madeProject {
-    background-color: var(--nav-bar);
-    width: 500px;
     padding: 10px;
     border-radius: 7px;
     margin: 10px;
 }
+
+.madeProjectImage {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 80px;
+    width: 600px;
+    border-radius: 20px;
+    border: 1px solid var(--font-main);
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.uihel {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.overlayImg {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.overlayImg p {
+    cursor: default;
+}
+
+.linkContainer a, .overlayImg p:hover {
+    text-decoration: none;
+    color: var(--font-main);
+}
+
+.linkContainer a:hover {
+    color: var(--hover);
+
+}
+
+.linkContainer {
+    margin-left: auto;
+}
+
+.madeProjectImage:hover .overlayImg {
+    opacity: 1;
+}
+
 /*KEYFRAMES*/
 @keyframes typing {
     from { width: 0; }
     to { width: 14ch; }
-  }
+}
   
-  /* Cursor Animation */
-  @keyframes blink {
+@keyframes blink {
     from, to { border-color: transparent; }
     50% { border-color: var(--font-white); }
-  }
+}
+
