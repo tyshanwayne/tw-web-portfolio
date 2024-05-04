@@ -9,6 +9,7 @@
     --font-orange: #be7949;
     --font-blue: #4b83ec;
     --font-green: #5aa173;
+    --font-yellow: #9f9e54;
     --border: #000;
     --hover: #3e3f42;
 }
@@ -27,7 +28,7 @@ body, html{
     }
 
     aside {
-        max-width: 290px;
+        max-width: 250px;
         padding-left: 5px;
     }
 
@@ -38,6 +39,10 @@ body, html{
     .content {
         width: 100%;
         margin-left: 320px !important;
+    }
+
+    .madeProject {
+        width: 300px !important;
     }
 
 }
@@ -52,6 +57,10 @@ body, html{
 
 .green {
     color: var(--font-green);
+}
+
+.yellow {
+    color: var(--font-yellow);
 }
 
 .divflex {
@@ -167,7 +176,8 @@ body, html{
 
 .buttonIcon:hover, .buttonIcon2:hover, .aboutMeApp:hover,
 .titlePortfolio:hover, .versionControl:hover, li:hover,
-.portfoliobutton:hover, .projectSide:hover, .bottombar p:hover {
+.portfoliobutton:hover, .projectSide:hover, .bottombar p:hover,
+.apppy:hover {
     background-color: var(--hover);
 }
 
@@ -182,11 +192,12 @@ body, html{
 aside {
     background-color: var(--nav-bar);
     border-right: 1px solid var(--border);
-    width: 330px;
+    width: 290px;
     height: 100%;
     display: flex;
     position: fixed;
     top: 51px;
+    transition: 0.3s;
 }
 
 .iconSide {
@@ -258,14 +269,12 @@ aside {
 
 .template img {
     margin-right: 4px;
-    width: 16px;
     height: 16px;
     border-radius: 2px;
 }
 
 .miniTextSide img {
     margin-right: 4px;
-    width: 16px;
     height: 16px;
     border-radius: 2px;
 }
@@ -305,8 +314,8 @@ aside {
 
 .bottombar img {
     margin-right: 4px;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
 }
 
 .bottombar p {
@@ -319,6 +328,12 @@ aside {
     align-items: center;
 }
 
+.apppy {
+    align-items: center;
+    border-radius: 4px;
+    padding: 2px;
+}
+
 .bottomright {
     margin-right: 10px;
     margin-left: auto;
@@ -327,8 +342,8 @@ aside {
 
 /*MAIN CONTENT*/
 .content {
-    margin-top: 70px;
-    margin-left: 370px;
+    margin-top: 80px;
+    margin-left: 330px;
     color: var(--font-main);
     font-family: 'Jetbrains Mono', monospace;
     display: flex;
@@ -336,6 +351,7 @@ aside {
     align-items: stretch;
     font-size: 18px;
     margin-right: 40px;
+    padding-bottom: 60px;
 }
 
 .titleName {
@@ -389,4 +405,54 @@ aside {
 
 .labelButton {
     margin-right: 3px;
+}
+
+.technologiesUsed {
+    display: block;
+    margin-top: 20px;
+}
+
+.indent {
+    margin-left: 40px;
+}
+
+.technologiesBox {
+    min-width: 160px;
+    height: 30px;
+    background-color: var(--nav-bar);
+    border-radius: 7px;
+    padding: 10px 20px;
+    margin: 5px;    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.technologiesBox img {
+    height: 25px;
+    margin-right: 7px;
+}
+
+.maintech {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.returntemplate{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects {
+    margin-top: 20px;
+}
+
+.madeProject {
+    background-color: var(--nav-bar);
+    width: 500px;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 10px;
 }
