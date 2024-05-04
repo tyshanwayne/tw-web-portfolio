@@ -29,7 +29,6 @@ body, html{
 
     aside {
         max-width: 250px;
-        padding-left: 5px;
     }
 
     .introductionContainer {
@@ -44,7 +43,6 @@ body, html{
     .madeProject {
         width: 300px !important;
     }
-
 }
 
 .orange {
@@ -175,9 +173,9 @@ body, html{
 }
 
 .buttonIcon:hover, .buttonIcon2:hover, .aboutMeApp:hover,
-.titlePortfolio:hover, .versionControl:hover, li:hover,
+.titlePortfolio:hover, .versionControl:hover, .miniTextSide li:hover,
 .portfoliobutton:hover, .projectSide:hover, .bottombar p:hover,
-.apppy:hover {
+.apppy:hover, .highlight {
     background-color: var(--hover);
 }
 
@@ -254,6 +252,14 @@ aside {
     padding-left: 40px;
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+.venv {
+    background-color: #403424;
+}
+
+.miniTextSide .venv:hover {
+    background-color: #403424;
 }
 
 .miniTextSide .bx, .tabi {

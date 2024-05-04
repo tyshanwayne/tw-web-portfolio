@@ -31,7 +31,7 @@
                 <div class="debug">
                     <div class="aboutMeApp">
                         <img src="icons/python_icon.png" class="python"style="width: 20px;">
-                        <p>about_me</p>
+                        <p>app.py</p>
                         <i class='bx bx-chevron-down margin5pxleft'></i>
                     </div>
                     <i class='bx bx-right-arrow buttonIcon2' style='color:#3a9c5c' ></i>
@@ -102,10 +102,21 @@
                             <li><img src="icons/html_tag.svg">footer.html</li>
                             <li><img src="icons/html_tag.svg">about.html</li>
                         </div>
+                        <li class="venv">
+                            <i class='bx bx-chevron-right'></i>
+                            <i class='bx bx-folder orange' ></i>
+                            <p>venv</p>
+                        </li>
                         <li><img src="icons/python_icon.png">app.py</li>
-                        <li onclick="scrollToElement('aboute')"><img src="icons/python_icon.png">about_me.py</li>
-                        <li onclick="scrollToElement('technologies')"><img src="icons/python_icon.png">technologies.py</li>
-                        <li onclick="scrollToElement('my_projects')"><img src="icons/python_icon.png">my_projects.py</li>
+                        <li id="aboutmepython" onclick="scrollToElement('aboute')">
+                            <img src="icons/python_icon.png">about_me.py
+                        </li>
+                        <li id="skillsetpython" onclick="scrollToElement('technologies')">
+                            <img src="icons/python_icon.png">skillset.py
+                        </li>
+                        <li id="myprojectspython" onclick="scrollToElement('my_projects')">
+                            <img src="icons/python_icon.png">my_projects.py
+                        </li>
                     </div>
                 </div>
             </aside>
@@ -115,38 +126,35 @@
             <div class="higa"></div>
             <i class='bx bx-shape-polygon buttonIcon amrge'></i>
         </div>
-        <div class="content" id="aboute">
-            <div class="divflex">
+        <div class="content">
+            <div class="divflex" id="aboute">
                 <p class="orange">import</p><p>&nbsp;</p><p>portfolio</p>
             </div>
             <p>&nbsp;</p>
-            <p>Hello! I'm</p>
+            <p>my_name =</p>
             <p class="blue titleName">Tyshan Wayne <br>Pulusan,</p>
             <div class="introductionContainer">
                 <p class="blue">Senior High School ICT Student</p>
-                <p>— Future Developer,    
-                Programming is where I can channel my creativity
-                and problem-solving skills to bring ideas to life.
+                <p>— Future Developer.
+                Embrace the learning process, stay curious, and keep building!
                 Looking forward to learn more languages!</p>
             </div>    
                 <div class="buttonAboutContainer">
-                    <button class="buttonAbout">
-                        <i class='bx bxs-user-badge labelButton'></i>Download Resume
-                    </button>
-                    <div class="divflex">
-                        <a href="https://github.com/tyshanwayne" target="_blank" class="buttonAbout">
-                            <i class='bx bxl-github labelButton'></i>Github
-                        </a>
-                        <a href="https://facebook.com/tyshanwayne" target="_blank" class="buttonAbout">
-                            <i class='bx bxl-facebook labelButton'></i>Facebook
-                        </a>
-                    </div>
+                    <a href="https://github.com/tyshanwayne" target="_blank" class="buttonAbout">
+                        <i class='bx bxl-github labelButton'></i>Github
+                    </a>
+                    <a href="https://facebook.com/tyshanwayne" target="_blank" class="buttonAbout">
+                        <i class='bx bxl-facebook labelButton'></i>Facebook
+                    </a>
+                    <a href="https://instagram.com/tyshanwayne" target="_blank" class="buttonAbout">
+                        <i class='bx bxl-instagram labelButton'></i>instagram
+                    </a>
                 </div>
             <div class="technologiesUsed" id="technologies">
-                &nbsp;
+                &nbsp
                 <div class="divflex">
                     <p class="yellow">@app.route</p>
-                    <p>(</p><p class="green">'/technologies'</p><p>)</p>
+                    <p>(</p><p class="green">'/skillset'</p><p>)</p>
                 </div>
                 <div class="divflex">
                     <p class="orange">def</p>&nbsp;<p class="blue">languages</p><p>():</p>
@@ -222,7 +230,7 @@
                 <p class="bottomna">Tyshan Wayne Pulusan</p>
                 <i class='bx bx-chevron-right'></i>
                 <div class="divflex apppy">
-                    <img src="icons/python_icon.png"><p>app.py</p>
+                    <img src="icons/python_icon.png"><p></p>
                 </div>
             </div>
             <div class="bottomright">
