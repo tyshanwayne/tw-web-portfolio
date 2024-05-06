@@ -51,6 +51,10 @@ body, html{
     .overlayImg {
         padding: 10px !important;
     }
+
+    .macos-button {
+        display: none;
+    }
 }
 
 .orange {color: var(--font-orange);}
