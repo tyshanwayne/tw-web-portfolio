@@ -12,7 +12,7 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <nav class="topbar">
+        <div class="topbar">
             <div class="macos-button">
                 <button class="buttonmac close"></button>
                 <button class="buttonmac minimize"></button>
@@ -42,14 +42,12 @@
                 <i class='bx bx-search buttonIcon' ></i>
                 <i class='bx bx-cog buttonIcon' ></i>
             </div>
-        </nav>
-        <div class="MainView">
-            <aside>
+        </div>
+            <div class="aside">
                 <div class="iconSide">
                     <i class='bx bx-folder buttonIcon amrge' ></i>
                     <i class='bx bx-git-commit buttonIcon amrge'></i>
                     <i class='bx bx-git-pull-request buttonIcon amrge'></i>
-
                     <div class="higa"></div>
                     <i class='bx bx-objects-vertical-bottom buttonIcon amrge'></i>
                     <i class='bx bx-bookmark buttonIcon amrge' ></i>
@@ -66,7 +64,8 @@
                 </div>
                 <div class="textSide">
                     <div class="projectSide">
-                        <p>Project</p><i class='bx bx-chevron-down'></i> 
+                        <p>Project</p>
+                        <i class='bx bx-chevron-down'></i> 
                     </div>
                     <div class="portfoliobutton">
                         <i class='bx bx-chevron-down'></i>
@@ -89,7 +88,7 @@
                             <i class='bx bx-folder' ></i>
                             <p>static</p>
                         </li>
-                        <div class="template"> 
+                        <div class="template">
                             <li><img src="icons/js_icon.png">script.js</li>
                             <li><img src="icons/png_icon.svg">icon.png</li>
                             <li><img src="icons/css_icon.png">styles.css</li>
@@ -99,7 +98,7 @@
                             <i class='bx bx-folder' ></i>
                             <p>templates</p>
                         </li>
-                        <div class="template"> 
+                        <div class="template">
                             <li><img src="icons/html_tag.svg">index.html</li>
                             <li><img src="icons/html_tag.svg">header.html</li>
                             <li><img src="icons/html_tag.svg">footer.html</li>
@@ -122,8 +121,7 @@
                         </li>
                     </div>
                 </div>
-            </aside>
-        </div>
+            </div>
         <div class="rightSidebar">
             <i class='bx bx-bell buttonIcon amrge'></i>
             <div class="higa"></div>
@@ -155,28 +153,34 @@
             <div class="introductionContainer">
                 <p class="blue">Senior High School ICT Student</p>
                 <p>— Future Developer.
-                Embrace the learning process, stay curious, and keep building!
-                Looking forward to learn more languages!</p>
+                    Embrace the learning process, stay curious, and keep building!
+                    Looking forward to learn more languages!
+                </p>
             </div>
-                <div class="buttonAboutContainer widthMobileImportant">
-                    <a href="https://github.com/tyshanwayne" target="_blank" class="buttonAbout">
-                        <i class='bx bxl-github labelButton'></i>Github
-                    </a>
-                    <a href="https://facebook.com/tyshanwayne" target="_blank" class="buttonAbout">
-                        <i class='bx bxl-facebook labelButton'></i>Facebook
-                    </a>
-                    <a href="https://instagram.com/tyshanwayne" target="_blank" class="buttonAbout">
-                        <i class='bx bxl-instagram labelButton'></i>instagram
-                    </a>
-                </div>
+            <div class="buttonAboutContainer widthMobileImportant">
+                <a href="https://github.com/tyshanwayne" target="_blank" class="buttonAbout">
+                <i class='bx bxl-github labelButton'></i>Github
+                </a>
+                <a href="https://facebook.com/tyshanwayne" target="_blank" class="buttonAbout">
+                <i class='bx bxl-facebook labelButton'></i>Facebook
+                </a>
+                <a href="https://instagram.com/tyshanwayne" target="_blank" class="buttonAbout">
+                <i class='bx bxl-instagram labelButton'></i>instagram
+                </a>
+            </div>
             <div class="technologiesUsed widthMobileImportant" id="technologies">
                 &nbsp
                 <div class="divflex">
                     <p class="yellow">@app.route</p>
-                    <p>(</p><p class="green">'/skillset'</p><p>)</p>
+                    <p>(</p>
+                    <p class="green">'/skillset'</p>
+                    <p>)</p>
                 </div>
                 <div class="divflex">
-                    <p class="orange">def</p>&nbsp;<p class="blue">languages</p><p>():</p>
+                    <p class="orange">def</p>
+                    &nbsp;
+                    <p class="blue">languages</p>
+                    <p>():</p>
                 </div>
                 <div class="indent maintech">
                     <div class="technologiesBox">
@@ -202,17 +206,23 @@
                 </div>
                 &nbsp;
                 <div class="divflex">
-                    <p class="orange">def</p>&nbsp;<p class="blue">frameworks</p><p>():</p>
+                    <p class="orange">def</p>
+                    &nbsp;
+                    <p class="blue">frameworks</p>
+                    <p>():</p>
                 </div>
                 <div class="indent maintech">
                     <div class="technologiesBox">
                         <img src="icons/flask_icon.png">
-                        <p>Flask</p>
+                        <p>flask</p>
                     </div>
                 </div>
                 &nbsp;
                 <div class="divflex">
-                    <p class="orange">def</p>&nbsp;<p class="blue">database</p><p>():</p>
+                    <p class="orange">def</p>
+                    &nbsp;
+                    <p class="blue">database</p>
+                    <p>():</p>
                 </div>
                 <div class="indent maintech">
                     <div class="technologiesBox">
@@ -226,30 +236,30 @@
                 </div>
                 &nbsp;
                 <div class="divflex indent returntemplate">
-                    <p class="orange">return</p>&nbsp;
-                    <p>jsonify({</p><p class="green">'message'</p><p>: <p class="green">&nbsp;'still learning more languages!'</p>})</p>
+                    <p class="orange">return</p>
+                    &nbsp;
+                    <p>jsonify({</p>
+                    <p class="green">'message'</p>
+                    <p>: 
+                    <p class="green">&nbsp;'still learning more languages!'</p>
+                    })</p>
                 </div>
             </div>
             <div class="projects" id="my_projects">
                 &nbsp;
-                <div class="divflex">
-                    <p class="yellow">@app.route</p>
-                    <p>(</p><p class="green">'/my_projects'</p><p>)</p>
-                </div>
-                <div class="divflex">
-                    <p class="orange">def</p>&nbsp;<p class="blue">projects</p><p>():</p>
-                </div>
+                <p><span class="yellow">@app.route</span>(<span class="green">'my_projects'</span>)</p>
+                <p><span class="orange">def </span><span class="blue">projects</span>():</p>
                 <div class="madeProject widthMobileImportant">
                     <p>first_main_project = {</p>
                     <p class="indent">name =<span class="green"> "Facelogix"</span>,</p>
-                    <p class="indent">tools = [<span class="green">"HTML"</span>, <span class="green">"python"</span>, <span class="green">"Flask"</span>, <span class="green">"javascript"</span>,
-                        <span class="green">"CSS"</span>],</p>
+                    <p class="indent">tools = [<span class="green">"HTML"</span>, <span class="green">"python"</span>, <span class="green">"flask"</span>, <span class="green">"javascript"</span>,
+                        <span class="green">"CSS"</span>],
+                    </p>
                     <p class="indent">status = <span class="green">"development"</span>,</p>
                     <p class="indent">description =
-                        <span class="green">"An attendance tracking system with
-                        dlib's face recognition technology. Generate real-time and
-                        PDF reports with late, on-time, and
-                        undertime tracking statuses."</span>,</p>
+                        <span class="green">"An attendance tracking system with dlib's face recognition technology. Generate real-time and
+                        PDF reports with late, on-time, and undertime tracking statuses."</span>,
+                    </p>
                     <p class="indent">ui_preview =</p>
                     <div class="madeProjectImage">
                         <img class="uihel" src="icons/facelogix_ui.png">
@@ -257,7 +267,7 @@
                             <img src="icons/facelogix_icon.png" style="width: 30px; margin-right: 10px;">
                             <p>Facelogix</p>
                             <div class="linkContainer">
-                                <a href="https://repository-images.githubusercontent.com/279611541/b7e1e580-c611-11ea-9b24-523c65baea0e" target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://repository-images.githubusercontent.com/279611541/b7e1e580-c611-11ea-9b24-523c65baea0e" target="_blank"><i class='bx bx-show' ></i></a>
                                 <a href="https://repository-images.githubusercontent.com/279611541/b7e1e580-c611-11ea-9b24-523c65baea0e" target="_blank" class="linkContainer"><i class='bx bx-code-alt'></i></a>
                             </div>
                         </div>
@@ -271,11 +281,22 @@
                 <p class="bottomna">Tyshan Pulusan</p>
                 <i class='bx bx-chevron-right'></i>
                 <div class="divflex apppy">
-                    <img src="icons/python_icon.png"><p></p>
+                    <img src="icons/python_icon.png">
+                    <p></p>
                 </div>
             </div>
             <div class="bottomright">
-                <p>725:8</p>&nbsp;<p>LF</p>&nbsp;<p>UTF-8</p>&nbsp;<p>4 spaces</p>&nbsp;<p>Python 3.11</p>&nbsp;<p><i class='bx bx-lock-open-alt' ></i></p>
+                <p>725:8</p>
+                &nbsp;
+                <p>LF</p>
+                &nbsp;
+                <p>UTF-8</p>
+                &nbsp;
+                <p>4 spaces</p>
+                &nbsp;
+                <p>Python 3.11</p>
+                &nbsp;
+                <p><i class='bx bx-lock-open-alt' ></i></p>
             </div>
         </div>
     </body>
