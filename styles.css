@@ -131,7 +131,6 @@ body, html{
     border-radius: 4px;
     display: flex;
     align-items: center;
-
 }
 
 .tw_icon {
@@ -393,7 +392,7 @@ body, html{
 .titleName span {
     display: inline-block;
     transition: all 0.1s ease;
-    cursor: pointer;
+    cursor: default;
 }
 
 .titleName span:hover {
@@ -540,7 +539,6 @@ body, html{
 }
 
 .linkContainer a, .overlayImg p:hover {
-    text-decoration: none;
     color: var(--font-main);
 }
 
