@@ -126,11 +126,53 @@ body, html{
 }
 
 .titlePortfolio {
-    margin-left: 20px;
     padding: 8px 10px;
     border-radius: 4px;
     display: flex;
     align-items: center;
+}
+
+.dropdown {
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--nav-bar);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    border:  1px solid var(--border);
+}
+
+.dropdown-content a {
+    color: var(--font-white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .titlePortfolio {
+    background-color: var(--hover);
+}
+
+.dropdown-content a:hover {
+    color: var(--font-main);
 }
 
 .tw_icon {
@@ -208,7 +250,7 @@ body, html{
 .aside {
     background-color: var(--nav-bar);
     border-right: 1px solid var(--border);
-    width: 270px;
+    width: 290px;
     height: 100%;
     display: flex;  
     position: fixed;
@@ -216,6 +258,10 @@ body, html{
     color: var(--font-white);
     font-family: 'Roboto', sans-serif;
     display: flex;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .iconSide {
@@ -283,6 +329,10 @@ body, html{
 }
 
 .miniTextSide .bx, .tabi {
+    margin-right: 3px;
+}
+
+.selos {
     margin-right: 3px;
 }
 
@@ -369,7 +419,7 @@ body, html{
 /*MAIN CONTENT*/
 .content {
     margin-top: 80px;
-    margin-left: 310px;
+    margin-left: 320px;
     color: var(--font-main);
     font-family: 'Jetbrains Mono', monospace;
     display: flex;
@@ -485,11 +535,6 @@ body, html{
 }
 
 .maintech {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.returntemplate{
     display: flex;
     flex-wrap: wrap;
 }

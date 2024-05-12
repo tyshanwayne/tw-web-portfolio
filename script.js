@@ -54,3 +54,97 @@ document.addEventListener('DOMContentLoaded', function() {
     updateText();
     highlightOnScroll();
 });
+
+//ON CLICK SIDE BAR RESPONSIVENESS
+const sidebarProject = document.getElementById('sidebarProject');
+const sidebarName = document.getElementById('sidebarName');
+const sidebarStatic = document.getElementById('sidebarStatic');
+const sidebarTemplates = document.getElementById('sidebarTemplates');
+const sidebarScratchesConsole = document.getElementById('sidebarScratchesConsole');
+const sidebarScratches = document.getElementById('sidebarScratches');
+
+const clickProject = document.getElementById('clickProject');
+const clickName = document.getElementById('clickName')
+const clickStatic = document.getElementById('clickStatic');
+const clickTemplates = document.getElementById('clickTemplates');
+const clickScratchesConsole = document.getElementById('clickScratchesConsole');
+const clickScratches = document.getElementById('clickScratches');
+
+const projectArrow = document.getElementById('projectArrow');
+const nameArrow = document.getElementById('nameArrow');
+const staticArrow = document.getElementById('staticArrow');
+const templatesArrow = document.getElementById('templatesArrow');
+const scratchesconsoleArrow = document.getElementById('scratchesconsoleArrow');
+const scratchesArrow = document.getElementById('scratchesArrow');
+
+sidebarProject.addEventListener('click', function() {
+    if (clickProject.style.display === 'none' ){
+        clickProject.style.display = 'block';
+        projectArrow.classList.add('bx-chevron-down');
+        projectArrow.classList.remove('bx-chevron-right');
+    } else {
+        clickProject.style.display = 'none';
+        projectArrow.classList.add('bx-chevron-right');
+        projectArrow.classList.remove('bx-chevron-down');
+    }
+});
+
+sidebarName.addEventListener('click', function() {
+    if (clickName.style.display === 'none' ){
+        clickName.style.display = 'block';
+        nameArrow.classList.add('bx-chevron-down');
+        nameArrow.classList.remove('bx-chevron-right');
+    } else {
+        clickName.style.display = 'none';
+        nameArrow.classList.add('bx-chevron-right');
+        nameArrow.classList.remove('bx-chevron-down');
+    }
+});
+
+sidebarStatic.addEventListener('click', function() {
+    if (clickStatic.style.display === 'none' ){
+        clickStatic.style.display = 'block';
+        staticArrow.classList.add('bx-chevron-down');
+        staticArrow.classList.remove('bx-chevron-right');
+    } else {
+        clickStatic.style.display = 'none';
+        staticArrow.classList.add('bx-chevron-right');
+        staticArrow.classList.remove('bx-chevron-down');
+    }
+});
+
+sidebarTemplates.addEventListener('click', function() {
+    if (clickTemplates.style.display === 'none' ){
+        clickTemplates.style.display = 'block';
+        templatesArrow.classList.add('bx-chevron-down');
+        templatesArrow.classList.remove('bx-chevron-right');
+    } else {
+        clickTemplates.style.display = 'none';
+        templatesArrow.classList.add('bx-chevron-right');
+        templatesArrow.classList.remove('bx-chevron-down');
+    }
+});
+
+sidebarScratchesConsole.addEventListener('click', function() {
+    if (clickScratchesConsole.style.display === 'none' ){
+        clickScratchesConsole.style.display = 'block';
+        scratchesconsoleArrow.classList.add('bx-chevron-down');
+        scratchesconsoleArrow.classList.remove('bx-chevron-right');
+    } else {
+        clickScratchesConsole.style.display = 'none';
+        scratchesconsoleArrow.classList.add('bx-chevron-right');
+        scratchesconsoleArrow.classList.remove('bx-chevron-down');
+    }
+});
+
+sidebarScratches.addEventListener('click', function() {
+    if (clickScratches.style.display === 'none' ){
+        clickScratches.style.display = 'block';
+        scratchesArrow.classList.add('bx-chevron-down');
+        scratchesArrow.classList.remove('bx-chevron-right');
+    } else {
+        clickScratches.style.display = 'none';
+        scratchesArrow.classList.add('bx-chevron-right');
+        scratchesArrow.classList.remove('bx-chevron-down');
+    }
+});
