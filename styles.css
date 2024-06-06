@@ -12,6 +12,7 @@
     --font-yellow: #9f9e54;
     --font-violet: #8c3f7e;
     --font-purple: #8c81c8;
+    --font-grey: #8f8d8d;
     --border: #000;
     --hover: #3e3f42;
 }
@@ -62,6 +63,7 @@ body, html{
 .green {color: var(--font-green);}
 .yellow {color: var(--font-yellow);}
 .violet {color: var(--font-violet)}
+.grey {color: var(--font-grey);}
 
 .divflex {
     display: flex;
