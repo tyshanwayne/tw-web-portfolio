@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>tyshanwayne.io</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="icons/tw_icon.png">
-        <script src="script.js" async defer></script>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tyshanwayne.io</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/tw_icon.png">
+    <script src="script.js" async defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
     <div class="aside">
         <div class="iconSide">
-            <i class='bx bx-folder buttonIcon amrge' ></i>
+            <i class='bx bx-folder buttonIcon amrge'></i>
             <i class='bx bx-git-commit buttonIcon amrge'></i>
             <i class='bx bx-git-pull-request buttonIcon amrge'></i>
             <div class="higa"></div>
             <i class='bx bx-objects-vertical-bottom buttonIcon amrge'></i>
-            <i class='bx bx-bookmark buttonIcon amrge' ></i>
-            <i class='bx bx-dots-horizontal-rounded buttonIcon amrge' ></i>
+            <i class='bx bx-bookmark buttonIcon amrge'></i>
+            <i class='bx bx-dots-horizontal-rounded buttonIcon amrge'></i>
             <div class="iconSideBottom">
                 <i class='bx bx-list-ul buttonIcon amrge'></i>
-                <i class='bx bx-right-arrow buttonIcon amrge' ></i>
-                <i class='bx bxl-python buttonIcon amrge' ></i>
+                <i class='bx bx-right-arrow buttonIcon amrge'></i>
+                <i class='bx bxl-python buttonIcon amrge'></i>
                 <i class='bx bx-layer buttonIcon amrge'></i>
-                <i class='bx bx-terminal buttonIcon amrge' ></i>
-                <i class='bx bx-info-circle buttonIcon amrge' ></i>
-                <i class='bx bx-network-chart buttonIcon amrge' ></i>
+                <i class='bx bx-terminal buttonIcon amrge'></i>
+                <i class='bx bx-info-circle buttonIcon amrge'></i>
+                <i class='bx bx-network-chart buttonIcon amrge'></i>
             </div>
         </div>
         <div class="textSide">
             <div class="projectSide" id="sidebarProject">
                 <p>Project</p>
-                <i class='bx bx-chevron-down' id="projectArrow"></i> 
+                <i class='bx bx-chevron-down' id="projectArrow"></i>
             </div>
             <div id="clickProject">
                 <div class="portfoliobutton" id="sidebarName">
                     <i class='bx bx-chevron-down selos' id="nameArrow"></i>
-                    <i class='bx bx-folder tabi' ></i>
+                    <i class='bx bx-folder tabi'></i>
                     <p>Tyshan Pulusan</p>
                 </div>
                 <div class="miniTextSide" id="clickName">
                     <li>
                         <i class='bx bx-chevron-right'></i>
-                        <i class='bx bx-folder' ></i>
+                        <i class='bx bx-folder'></i>
                         <p>node_modules</p>
                     </li>
                     <li id="sidebarStatic">
                         <i class='bx bx-chevron-down' id="staticArrow"></i>
-                        <i class='bx bx-folder' ></i>
+                        <i class='bx bx-folder'></i>
                         <p>static</p>
                     </li>
                     <div class="template" id="clickStatic">
@@ -60,7 +62,7 @@
                     </div>
                     <li id="sidebarTemplates">
                         <i class='bx bx-chevron-down' id="templatesArrow"></i>
-                        <i class='bx bx-folder' ></i>
+                        <i class='bx bx-folder'></i>
                         <p>templates</p>
                     </li>
                     <div class="template" id="clickTemplates">
@@ -68,52 +70,52 @@
                         <li><img src="icons/html_tag.svg">header.html</li>
                         <li><img src="icons/html_tag.svg">about.html</li>
                     </div>
-                        <li class="venv">
-                            <i class='bx bx-chevron-right'></i>
-                            <i class='bx bx-folder orange' ></i>
-                            <p>venv</p>
-                        </li>
-                        <li>
-                            <i class='bx bx-chevron-down' style="opacity: 0;"></i>
-                            <img src="icons/python_icon.png">app.py
-                        </li>
-                        <li id="aboutmepython" onclick="scrollToElement('aboute')">
-                            <i class='bx bx-chevron-down' style="opacity: 0;"></i>
-                            <img src="icons/python_icon.png">about_me.py
-                        </li>
-                        <li id="skillsetpython" onclick="scrollToElement('technologies')">
-                            <i class='bx bx-chevron-down' style="opacity: 0;"></i>
-                            <img src="icons/python_icon.png">skillset.py
-                        </li>
-                        <li id="myprojectspython" onclick="scrollToElement('my_projects')">
-                            <i class='bx bx-chevron-down' style="opacity: 0;"></i>
-                            <img src="icons/python_icon.png">my_projects.py
-                        </li>
-                    </div>
-                    <div class="portfoliobutton">
-                        <i class='bx bx-chevron-right selos'></i>
-                        <i class='bx bx-bar-chart-alt-2 tabi'></i>
-                        <p>External Libraries</p>
-                    </div>
-                    <div class="portfoliobutton" id="sidebarScratchesConsole">
-                        <i class='bx bx-chevron-down selos' id="scratchesconsoleArrow"></i>
-                        <i class='bx bx-bar-chart bx-rotate-90 tabi' ></i>
-                        <p>Scratches and Consoles</p>
-                    </div>
-                    <div class="miniTextSide" id="clickScratchesConsole">
-                        <li id="sidebarScratches">
-                            <i class='bx bx-chevron-down' id="scratchesArrow"></i>
-                            <i class='bx bx-folder' ></i>
-                            <p>Scratches</p>
-                        </li>
-                        <div class="template" id="clickScratches">
-                            <li><img src="icons/html_tag.svg">reuse.html</li>
-                            <li><img src="icons/js_icon.png">ignore.js</li>
-                        </div>
+                    <li class="venv">
+                        <i class='bx bx-chevron-right'></i>
+                        <i class='bx bx-folder orange'></i>
+                        <p>venv</p>
+                    </li>
+                    <li>
+                        <i class='bx bx-chevron-down' style="opacity: 0;"></i>
+                        <img src="icons/python_icon.png">app.py
+                    </li>
+                    <li id="aboutmepython" onclick="scrollToElement('aboute')">
+                        <i class='bx bx-chevron-down' style="opacity: 0;"></i>
+                        <img src="icons/python_icon.png">about_me.py
+                    </li>
+                    <li id="skillsetpython" onclick="scrollToElement('technologies')">
+                        <i class='bx bx-chevron-down' style="opacity: 0;"></i>
+                        <img src="icons/python_icon.png">skillset.py
+                    </li>
+                    <li id="myprojectspython" onclick="scrollToElement('my_projects')">
+                        <i class='bx bx-chevron-down' style="opacity: 0;"></i>
+                        <img src="icons/python_icon.png">my_projects.py
+                    </li>
+                </div>
+                <div class="portfoliobutton">
+                    <i class='bx bx-chevron-right selos'></i>
+                    <i class='bx bx-bar-chart-alt-2 tabi'></i>
+                    <p>External Libraries</p>
+                </div>
+                <div class="portfoliobutton" id="sidebarScratchesConsole">
+                    <i class='bx bx-chevron-down selos' id="scratchesconsoleArrow"></i>
+                    <i class='bx bx-bar-chart bx-rotate-90 tabi'></i>
+                    <p>Scratches and Consoles</p>
+                </div>
+                <div class="miniTextSide" id="clickScratchesConsole">
+                    <li id="sidebarScratches">
+                        <i class='bx bx-chevron-down' id="scratchesArrow"></i>
+                        <i class='bx bx-folder'></i>
+                        <p>Scratches</p>
+                    </li>
+                    <div class="template" id="clickScratches">
+                        <li><img src="icons/html_tag.svg">reuse.html</li>
+                        <li><img src="icons/js_icon.png">ignore.js</li>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="rightSidebar">
         <i class='bx bx-bell buttonIcon amrge'></i>
@@ -133,202 +135,240 @@
                 <i class='bx bx-chevron-down margin5pxleft'></i>
             </div>
             <div class="dropdown-content">
-                <a href="https://linkedin.com/in/tyshanwayne" target="_blank"><i class='bx bxl-linkedin labelButton'></i>Linkedin</a>
-                <a href="https://github.com/tyshanwayne" target="_blank"><i class='bx bxl-github labelButton'></i>Github</a>
-                <a href="https://facebook.com/tyshanwayne" target="_blank"><i class='bx bxl-facebook labelButton'></i>Facebook</a>
-                <a href="https://instagram.com/shanwy_" target="_blank"><i class='bx bxl-instagram labelButton'></i>Instagram</a>
+                <a href="https://linkedin.com/in/tyshanwayne" target="_blank"><i
+                        class='bx bxl-linkedin labelButton'></i>Linkedin</a>
+                <a href="https://github.com/tyshanwayne" target="_blank"><i
+                        class='bx bxl-github labelButton'></i>Github</a>
+                <a href="https://facebook.com/tyshanwayne" target="_blank"><i
+                        class='bx bxl-facebook labelButton'></i>Facebook</a>
+                <a href="https://instagram.com/shanwy_" target="_blank"><i
+                        class='bx bxl-instagram labelButton'></i>Instagram</a>
             </div>
         </div>
         <div class="versionControl">
-            <i class='bx bx-network-chart' ></i>
+            <i class='bx bx-network-chart'></i>
             <p class="margin5pxleft">main</p>
             <i class='bx bx-chevron-down margin5pxleft'></i>
         </div>
         <div class="rightTopbar">
             <div class="debug">
                 <div class="aboutMeApp">
-                    <img src="icons/python_icon.png" class="python"style="width: 20px;">
+                    <img src="icons/python_icon.png" class="python" style="width: 20px;">
                     <p>app.py</p>
                     <i class='bx bx-chevron-down margin5pxleft'></i>
                 </div>
-                <i class='bx bx-right-arrow buttonIcon2' style='color:#3a9c5c' ></i>
+                <i class='bx bx-right-arrow buttonIcon2' style='color:#3a9c5c'></i>
                 <img src="icons/debug.svg" class="buttonIcon2">
-                <i class='bx bx-dots-vertical-rounded buttonIcon2' ></i>
+                <i class='bx bx-dots-vertical-rounded buttonIcon2'></i>
             </div>
             <i class='bx bx-user-plus buttonIcon'></i>
-            <i class='bx bx-search buttonIcon' ></i>
-            <i class='bx bx-cog buttonIcon' ></i>
+            <i class='bx bx-search buttonIcon'></i>
+            <i class='bx bx-cog buttonIcon'></i>
         </div>
     </div>
-        <div class="content">
-            <div class="divflex" id="aboute">
-                <p><span class="orange">import </span>portfolio</p>
-            </div>
-            <p>&nbsp;</p>
-            <div class="divflex">
+    <div class="content">
+        <div class="divflex" id="aboute">
+            <p><span class="orange">import </span>portfolio</p>
+        </div>
+        <p>&nbsp;</p>
+        <div class="divflex">
             <p>my_name =</p>
-            </div>
-            <div class="titleName blue divflex">
-                <span>T</span>
-                <span>y</span>
-                <span>s</span>
-                <span>h</span>
-                <span>a</span>
-                <span>n</span>
-                <span>&nbsp;</span>
-                <span>P</span>
-                <span>u</span>
-                <span>l</span>
-                <span>u</span>
-                <span>s</span>
-                <span>a</span>
-                <span>n</span>
-            </div>
-            <div class="introductionContainer">
-                <p class="blue">College IT Student</p>
-                <p>— Future Developer.
-                    Embrace the learning process, stay curious, and keep building!
-                    Looking forward to learn more languages!
-                </p>
-            </div>
-            <div class="buttonAboutContainer widthMobileImportant">
-                <a href="https://github.com/tyshanwayne" target="_blank" class="buttonAbout">
+        </div>
+        <div class="titleName blue divflex">
+            <span>T</span>
+            <span>y</span>
+            <span>s</span>
+            <span>h</span>
+            <span>a</span>
+            <span>n</span>
+            <span>&nbsp;</span>
+            <span>P</span>
+            <span>u</span>
+            <span>l</span>
+            <span>u</span>
+            <span>s</span>
+            <span>a</span>
+            <span>n</span>
+        </div>
+        <div class="introductionContainer">
+            <p class="blue">IT Student</p>
+            <p>— Future Developer.
+                Embrace the learning process, stay curious, and keep building!
+                Looking forward to learn more languages!
+            </p>
+        </div>
+        <div class="buttonAboutContainer widthMobileImportant">
+            <a href="https://github.com/tyshanwayne" target="_blank" class="buttonAbout">
                 <i class='bx bxl-github labelButton'></i>Github
-                </a>
-                <a href="https://linkedin.com/in/tyshanwayne" target="_blank" class="buttonAbout">
+            </a>
+            <a href="https://linkedin.com/in/tyshanwayne" target="_blank" class="buttonAbout">
                 <i class='bx bxl-linkedin labelButton'></i>Linkedin
-                </a>
-                <a href="https://instagram.com/tyshanwayne" target="_blank" class="buttonAbout">
+            </a>
+            <a href="https://instagram.com/tyshanwayne" target="_blank" class="buttonAbout">
                 <i class='bx bxl-instagram labelButton'></i>Instagram
-                </a>
+            </a>
+        </div>
+        <div class="technologiesUsed widthMobileImportant" id="technologies">
+            &nbsp
+            <div class="divflex">
+                <p class="yellow">@app.route</p>
+                <p>(</p>
+                <p class="green">'/skillset'</p>
+                <p>)</p>
             </div>
-            <div class="technologiesUsed widthMobileImportant" id="technologies">
-                &nbsp
-                <div class="divflex">
-                    <p class="yellow">@app.route</p>
-                    <p>(</p>
-                    <p class="green">'/skillset'</p>
-                    <p>)</p>
-                </div>
-                <div class="divflex">
-                    <p class="orange">def</p>
-                    &nbsp;
-                    <p class="blue">languages</p>
-                    <p>():</p>
-                </div>
-                <div class="indent maintech">
-                    <div class="technologiesBox">
-                        <img src="icons/python_icon.png">
-                        <p>python</p>
-                    </div>
-                    <div class="technologiesBox">
-                        <img src="icons/html_icon.png">
-                        <p>HTML</p>
-                    </div>
-                    <div class="technologiesBox">
-                        <img src="icons/js_icon.png">
-                        <p>javascript</p>
-                    </div>
-                    <div class="technologiesBox">
-                        <img src="icons/css_icon.png">
-                        <p>CSS</p>
-                    </div>
-                </div>
+            <div class="divflex">
+                <p class="orange">def</p>
                 &nbsp;
-                <div class="divflex">
-                    <p class="orange">def</p>
-                    &nbsp;
-                    <p class="blue">frameworks</p>
-                    <p>():</p>
-                </div>
-                <div class="indent maintech">
-                    <div class="technologiesBox">
-                        <img src="icons/flask_icon.png">
-                        <p>flask</p>
-                    </div>
-                    <div class="technologiesBox">
-                        <img src="icons/react_icon.png">
-                        <p>React [JS, Native]</p>
-                    </div>
-                </div>
-                &nbsp;
-                <div class="divflex">
-                    <p class="orange">def</p>
-                    &nbsp;
-                    <p class="blue">database</p>
-                    <p>():</p>
-                </div>
-                <div class="indent maintech">
-                    <div class="technologiesBox">
-                        <img src="icons/firebase_icon.png">
-                        <p>Firebase</p>
-                    </div>
-                    <div class="technologiesBox">
-                        <img src="icons/mysql_icon.png">
-                        <p>MySQL</p>
-                    </div>
-                    <div class="technologiesBox">
-                        <img src="icons/sqlite_icon.png">
-                        <p>SQLite</p>
-                    </div>
-                </div>
-                &nbsp;
-                <p class="indent"><span class="orange">return </span>jsoniffy({<span class="green">'message'</span>: <span class="green">'still learning more languages!</span>})</p>
+                <p class="blue">languages</p>
+                <p>():</p>
             </div>
-            <div class="projects" id="my_projects">
+            <div class="indent maintech">
+                <div class="technologiesBox">
+                    <img src="icons/python_icon.png">
+                    <p>python</p>
+                </div>
+                <div class="technologiesBox">
+                    <img src="icons/html_icon.png">
+                    <p>HTML</p>
+                </div>
+                <div class="technologiesBox">
+                    <img src="icons/js_icon.png">
+                    <p>javascript</p>
+                </div>
+                <div class="technologiesBox">
+                    <img src="icons/css_icon.png">
+                    <p>CSS</p>
+                </div>
+            </div>
+            &nbsp;
+            <div class="divflex">
+                <p class="orange">def</p>
                 &nbsp;
-                <p><span class="yellow">@app.route</span>(<span class="green">'my_projects'</span>)</p>
-                <p><span class="orange">def </span><span class="blue">projects</span>():</p>
-                <div class="madeProject widthMobileImportant">
-                    <p class="grey"># STI SHS Exposition 2024 - Best in Web Application</p>
-                    <p>first_main_project = {</p>
-                    <p class="indent">name =<span class="green"> "Facelogix"</span>,</p>
-                    <p class="indent">tools = [<span class="green">"HTML"</span>, <span class="green">"python"</span>, <span class="green">"flask"</span>, <span class="green">"javascript"</span>,
-                        <span class="green">"CSS"</span>],
-                    </p>
-                    <p class="indent">status = <span class="green">"development"</span>,</p>
-                    <p class="indent">description =
-                        <span class="green">"An attendance tracking system with dlib's face recognition technology. Generate real-time and
-                        PDF reports with late, on-time, and undertime tracking statuses."</span>,
-                    </p>
-                    <p class="indent">ui_preview =</p>
-                    <div class="madeProjectImage">
-                        <img class="uihel" src="icons/facelogix_gui.png">
-                        <div class="overlayImg divflex">
-                            <img src="icons/facelogix_icon.png" style="width: 30px; margin-right: 10px;">
-                            <p>Facelogix</p>
-                            <div class="linkContainer">
-                                <a href="https://repository-images.githubusercontent.com/279611541/b7e1e580-c611-11ea-9b24-523c65baea0e" target="_blank"><i class='bx bx-show' ></i></a>
-                                <a href="https://repository-images.githubusercontent.com/279611541/b7e1e580-c611-11ea-9b24-523c65baea0e" target="_blank" class="linkContainer"><i class='bx bx-code-alt'></i></a>
-                            </div>
+                <p class="blue">frameworks</p>
+                <p>():</p>
+            </div>
+            <div class="indent maintech">
+                <div class="technologiesBox">
+                    <img src="icons/flask_icon.png">
+                    <p>flask</p>
+                </div>
+                <div class="technologiesBox">
+                    <img src="icons/react_icon.png">
+                    <p>React [JS, Native]</p>
+                </div>
+            </div>
+            &nbsp;
+            <div class="divflex">
+                <p class="orange">def</p>
+                &nbsp;
+                <p class="blue">database</p>
+                <p>():</p>
+            </div>
+            <div class="indent maintech">
+                <div class="technologiesBox">
+                    <img src="icons/firebase_icon.png">
+                    <p>Firebase</p>
+                </div>
+                <div class="technologiesBox">
+                    <img src="icons/mysql_icon.png">
+                    <p>MySQL</p>
+                </div>
+                <div class="technologiesBox">
+                    <img src="icons/sqlite_icon.png">
+                    <p>SQLite</p>
+                </div>
+            </div>
+            &nbsp;
+            <p class="indent"><span class="orange">return </span>jsoniffy({<span class="green">'message'</span>: <span
+                    class="green">'still learning more languages!</span>})</p>
+        </div>
+        <div class="projects" id="my_projects">
+            &nbsp;
+            <p><span class="yellow">@app.route</span>(<span class="green">'my_projects'</span>)</p>
+            <p><span class="orange">def </span><span class="blue">projects</span>():</p>
+            <div class="madeProject widthMobileImportant">
+                <p class="grey"># PUP Business Proposal App</p>
+                <p>second_main_project = {</p>
+                <p class="indent">name = <span class="green">"Greenerate"</span>,</p>
+                <p class="indent">tools = [<span class="green">"React Native"</span>, <span
+                        class="green">"JavaScript"</span>, <span class="green">"Firebase"</span>, <span
+                        class="green">"Spoonacular API"</span>],
+                </p>
+                <p class="indent">status = <span class="green">"completed"</span>,</p>
+                <p class="indent">description =
+                    <span class="green">"A mobile app that helps users generate creative recipes using leftover
+                        ingredients."</span>,
+                </p>
+                <p class="indent">ui_preview =</p>
+                <div class="madeProjectImageP">
+                    <img class="ui" src="icons/greenerate_gui.jpg">
+                    <div class="overlayImg divflex">
+                        <img src="icons/greenerate_icon.png"
+                            style="width: 30px; margin-right: 10px; border-radius: 8px;">
+                        <p>Greenerate</p>
+                        <div class="linkContainer">
+                            <a href="https://github.com/tyshanwayne/greenerate-mobile/blob/88fa0f20f9a1a30374da105d00fc6d26ac951e84/greeneratev1.apk"
+                                target="_blank"><i class='bx bx-show'></i></a>
+                            <a href="https://github.com/tyshanwayne/greenerate-mobile" target="_blank"
+                                class="linkContainer"><i class='bx bx-code-alt'></i></a>
                         </div>
                     </div>
-                    <p>}</p>
                 </div>
+
+                <p class="grey"># STI SHS Exposition 2024 - Best in Web Application</p>
+                <p>first_main_project = {</p>
+                <p class="indent">name =<span class="green"> "Facelogix"</span>,</p>
+                <p class="indent">tools = [<span class="green">"HTML"</span>, <span class="green">"python"</span>, <span
+                        class="green">"flask"</span>, <span class="green">"javascript"</span>,
+                    <span class="green">"CSS"</span>],
+                </p>
+                <p class="indent">status = <span class="green">"completed"</span>,</p>
+                <p class="indent">description =
+                    <span class="green">"An attendance tracking system with dlib's face recognition technology. Generate
+                        real-time and
+                        PDF reports with late, on-time, and undertime tracking statuses."</span>,
+                </p>
+                <p class="indent">ui_preview =</p>
+                <div class="madeProjectImage">
+                    <img class="ui" src="icons/facelogix_gui.png">
+                    <div class="overlayImg divflex">
+                        <img src="icons/facelogix_icon.png" style="width: 30px; margin-right: 10px;">
+                        <p>Facelogix</p>
+                        <div class="linkContainer">
+                            <a href="https://repository-images.githubusercontent.com/279611541/b7e1e580-c611-11ea-9b24-523c65baea0e"
+                                target="_blank"><i class='bx bx-show'></i></a>
+                            <a href="https://repository-images.githubusercontent.com/279611541/b7e1e580-c611-11ea-9b24-523c65baea0e"
+                                target="_blank" class="linkContainer"><i class='bx bx-code-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p>}</p>
             </div>
         </div>
-        <div class="bottombar">
-            <div class="bottomleft">
-                <p class="bottomna">Tyshan Pulusan</p>
-                <i class='bx bx-chevron-right'></i>
-                <div class="divflex apppy">
-                    <img src="icons/python_icon.png">
-                    <p></p>
-                </div>
-            </div>
-            <div class="bottomright">
-                <p>725:8</p>
-                &nbsp;
-                <p>LF</p>
-                &nbsp;
-                <p>UTF-8</p>
-                &nbsp;
-                <p>4 spaces</p>
-                &nbsp;
-                <p>Python 3.11</p>
-                &nbsp;
-                <p><i class='bx bx-lock-open-alt' ></i></p>
+    </div>
+    <div class="bottombar">
+        <div class="bottomleft">
+            <p class="bottomna">Tyshan Pulusan</p>
+            <i class='bx bx-chevron-right'></i>
+            <div class="divflex apppy">
+                <img src="icons/python_icon.png">
+                <p></p>
             </div>
         </div>
-    </body>
+        <div class="bottomright">
+            <p>725:8</p>
+            &nbsp;
+            <p>LF</p>
+            &nbsp;
+            <p>UTF-8</p>
+            &nbsp;
+            <p>4 spaces</p>
+            &nbsp;
+            <p>Python 3.11</p>
+            &nbsp;
+            <p><i class='bx bx-lock-open-alt'></i></p>
+        </div>
+    </div>
+</body>
+
 </html>
